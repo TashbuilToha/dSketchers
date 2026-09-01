@@ -6,9 +6,10 @@
 }
 
 body {
-  background-color: #323334;
+  /* background-color: #323334; */
+  background-color: #fff;
   font-family: "Urbanist", sans-serif;
-  color: #fff;
+  color: #323334;
   line-height: 1.6;
   padding-top: 66px;
 }
@@ -28,7 +29,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #323334;
+  background-color: #fff;
   z-index: 1000;
 }
 
@@ -113,7 +114,7 @@ header {
   min-width: 200px;
   max-width: 248px;
   height: 60px;
-  background-color: #ea384d;
+  background-color: #EA384D;
   color: #fff;
   padding: 18px 36px;
   border-radius: 50px;
@@ -130,14 +131,14 @@ header {
 }
 
 .btn-primary:hover {
-  background-color: #fff;
-  color: #323334;
+  background-color: #323334;
+  color: #fff;
   transform: translateY(-2px);
 }
 
-.btn-primary:hover img {
+/* .btn-primary:hover img {
   content: url(../images/bVector.png);
-}
+} */
 
 /* ===== GALLERY SECTION ===== */
 .gallery {
@@ -205,13 +206,17 @@ hr {
 .section-header .title {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 700;
-  color: #fff;
+  color: #323334;
 }
 
 /* ===== IMPACT METRICS ===== */
 .impact-metrics {
   padding: 80px 0;
 }
+
+/* .impact-metrics .title {
+  color: #323334;
+} */
 
 .metrics-grid {
   display: grid;
@@ -221,10 +226,10 @@ hr {
 
 .metric-card {
   height: 380px;
-  background-color: #fff;
+  background-color: #323334;
   border-radius: 12px;
   padding: 30px;
-  color: #323334;
+  color: #fff;
   font-family: "Parkinsans", sans-serif;
   transition: all 0.3s ease;
   display: flex;
@@ -263,17 +268,17 @@ hr {
 
 .testimonial-card {
   height: fit-content;
-  background-color: #fff;
+  background-color: #323334;
   border-radius: 12px;
   padding: 30px;
-  color: #323334;
+  color: #fff;
   font-family: "Parkinsans", sans-serif;
   line-height: 28px;
 }
 
-.testimonial-card:hover{
-  background: #EA384D;
-  color: #FFFFFF;
+.testimonial-card:hover {
+  background: #ea384d;
+  color: #ffffff;
 }
 
 .testimonial-text {
@@ -302,8 +307,10 @@ hr {
 .letter_box {
   margin: 80px auto;
   position: relative;
-  max-width: 1220px;
-  padding: 0 20px;
+  max-width: 1180px;
+  /* padding: 0 20px; */
+  box-shadow: 0 2px 10px #323334;
+  border-radius: 12px;
 }
 
 .next,
@@ -321,12 +328,23 @@ hr {
   align-items: center;
 }
 
-.next {
+/* .next {
   left: -35px;
 }
 
 .previous {
   right: -35px;
+}
+ */
+
+.previous {
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.next {
+  right: 100%;
+  transform: translate(50%, -50%);
 }
 
 .letter_image {
@@ -435,71 +453,117 @@ hr {
   font-size: clamp(14px, 2vw, 16px);
 } */
 
-
-
-
-
-
-
-
-
-
 .portfolio {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
 }
 
 .portfolio-item {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .portfolio-item img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-    border-radius: 12px;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .portfolio-text h3 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .portfolio-text p {
-    color: #727375;
-    font-family: "Parkinsans", sans-serif;
+  color: #727375;
+  font-family: "Parkinsans", sans-serif;
+}
+
+/* Explore our work */
+.exploreOurwork .container {
+  background: #323334;
+  border-radius: 12px;
+  color:#fff;
+  padding: 40px;
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+}
+
+.exploreOurwork_header{
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+}
+
+.exploreOurwork_header h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.exploreOurwork_header p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.exploreOurworkbutton {
+  display: flex;
+  gap: 20px;
+}
+
+.exploreOurworkbtn_text, .exploreOurwork_contactus div {
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+.exploreOurworkbtn_vector {
+  width: fit-content;
+}
+
+.exploreOurworkbtn, .exploreOurwork_contactus{
+  display: flex;
+  gap: 38px;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 26px 18px 36px;
+  border-radius: 50px;
+
+}
+
+.exploreOurworkbtn {
+/*   display: flex;
+  gap: 38px;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  border-radius: 50px; */
+  background: #ea384d;
+}
+
+.exploreOurwork_contactus {
+  border: 2px solid #ffffff;
+/*   display: flex;
+  gap: 38px;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  border-radius: 50px; */
+}
+
+/* .exploreOurworkbtn{
+
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ */
 
 /* ===== BENEFITS ===== */
 .benefits {
@@ -515,7 +579,8 @@ hr {
 
 .benefit-card {
   height: 360px;
-  background-color: #fff;
+  background-color: #323334;
+  color: #fff;
   border-radius: 12px;
   padding: 30px;
   transition: all 0.3s ease;
@@ -536,22 +601,60 @@ hr {
   font-size: clamp(18px, 2.5vw, 20px);
   font-weight: 700;
   margin-bottom: 12px;
-  color: #323334;
+ /*  color: #323334; */
 }
 
-.benefit-card:hover h3 {
+/* .benefit-card:hover h3 {
   color: #fff;
-}
+} */
 
 .benefit-card p {
-  color: #727375;
+  color: #fff;
   font-family: "Parkinsans", sans-serif;
   line-height: 1.6;
   font-size: clamp(14px, 2vw, 16px);
 }
 
-.benefit-card:hover p {
+/* .benefit-card:hover p {
   color: #fff;
+} */
+
+
+
+/* Learning hub */
+.learningHub .section-header h2 {
+  font-size: 24px;
+}
+
+.learningHub .section-header p {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.course_card{
+  display: flex;
+  gap: 20px;
+}
+
+.duration,.course_projects,.lectures{
+  min-width: 11.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border: 2px solid #727375;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+:is(.duration,.course_projects,.lectures) .text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.time,.project_number,.lectures_numbers{
+  font-size: 24px;
 }
 
 /* ===== PRICING ===== */
@@ -566,10 +669,10 @@ hr {
 }
 
 .pricing-card {
-  background-color: #fff;
+  background-color: #323334;
   border-radius: 12px;
   padding: 40px;
-  color: #323334;
+  color: #fff;
   transition: all 0.3s ease;
 }
 
@@ -586,7 +689,8 @@ hr {
 }
 
 .plan-description {
-  color: #727375;
+  /* color: #727375; */
+  color:#fff;
   font-family: "Parkinsans", sans-serif;
   margin-bottom: 20px;
   font-size: clamp(14px, 2vw, 16px);
@@ -621,7 +725,7 @@ hr {
 .plan-features li {
   padding: 4px 0;
   font-family: "Parkinsans", sans-serif;
-  color: #727375;
+  color: #fff;
   font-size: clamp(14px, 2vw, 16px);
 }
 
@@ -642,7 +746,7 @@ hr {
 
 .pricing-card .btn-primary {
   margin: 76px 0 0 0;
-  background-color: #323334;
+  background-color: #EA384D;
   width: 100%;
 }
 
