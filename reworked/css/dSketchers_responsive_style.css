@@ -1,1028 +1,2107 @@
 /* ===== RESET & BASE STYLES ===== */
+
 * {
+
   margin: 0;
+
   padding: 0;
+
   box-sizing: border-box;
+
 }
 
 body {
+
   /* background-color: #323334; */
+
   background-color: #fff;
+
   font-family: "Urbanist", sans-serif;
+
   color: #323334;
+
   line-height: 1.6;
+
   padding-top: 66px;
+
 }
 
 .container {
+
   max-width: 1220px;
+
   margin: 0 auto;
+
   padding: 0 20px;
+
   width: 100%;
+
 }
 
 /* ===== HEADER & NAVIGATION ===== */
+
 header {
+
   /* margin-bottom: 1000px; */
+
   padding: 20px 0;
+
   position: fixed;
+
   top: 0;
+
   left: 0;
+
   right: 0;
+
   background-color: #fff;
+
   z-index: 1000;
+
 }
 
 .nav-links {
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   flex-wrap: wrap;
+
   gap: 20px;
+
 }
 
 .logo img {
+
   width: 268px;
+
   height: 50px;
+
   max-width: 100%;
+
 }
 
 .nav-links .links a {
+
   color: #fff;
+
   min-width: 160px;
+
   height: 46px;
+
   border: 1px solid #fff;
+
   border-radius: 50px;
+
   padding: 12px 24px;
+
   font-size: 16px;
+
   font-weight: 700;
+
   text-decoration: none;
+
   transition: all 0.3s ease;
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   white-space: nowrap;
+
 }
 
 .nav-links .links a:hover {
+
   background-color: #ea384d;
+
   border-color: #ea384d;
+
 }
 
 /* ===== HERO SECTION ===== */
+
 .hero-section {
+
   padding: 120px 0 60px 0;
+
   margin-top: 80px;
+
 }
 
 .customer-review {
+
   display: flex;
+
   align-items: center;
+
   gap: 12px;
+
   margin-bottom: 20px;
+
 }
 
 .customer-review img {
+
   width: 40px;
+
   height: 40px;
+
   border-radius: 50%;
+
 }
 
 .customer-review p {
+
   color: #727375;
+
   font-size: 14px;
+
   font-family: "Parkinsans", sans-serif;
+
 }
 
 .hero-content h1 {
+
   font-size: clamp(2rem, 5vw, 3.5rem);
+
   font-weight: 400;
+
   margin-bottom: 20px;
+
   line-height: 1.2;
+
 }
 
 .hero-content p {
+
   color: #727375;
+
   font-size: clamp(16px, 2vw, 18px);
+
   margin-bottom: 30px;
+
   font-family: "Parkinsans", sans-serif;
+
   max-width: 600px;
+
 }
 
 /* ===== BUTTONS ===== */
+
 .btn-primary {
+
   min-width: 200px;
+
   max-width: 248px;
+
   height: 60px;
+
   background-color: #EA384D;
+
   color: #fff;
+
   padding: 18px 36px;
+
   border-radius: 50px;
+
   text-decoration: none;
+
   font-size: clamp(16px, 2vw, 18px);
+
   font-weight: 700;
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   gap: 10px;
+
   transition: all 0.3s ease;
+
   border: none;
+
   cursor: pointer;
+
 }
 
 .btn-primary:hover {
+
   background-color: #323334;
+
   color: #fff;
+
   transform: translateY(-2px);
+
 }
 
-/* .btn-primary:hover img {
-  content: url(../images/bVector.png);
-} */
+/* .btn-primary:hover img {*
 
-/* ===== GALLERY SECTION ===== */
+*  content: url(../images/bVector.png);*
+
+*} /* ===== GALLERY SECTION ===== */
+
 .gallery {
+
   padding: 80px 0;
+
 }
 
 .image-slider {
+
   background-color: #fff;
+
   border-radius: 12px;
+
   overflow: hidden;
+
   margin-bottom: 60px;
+
   height: clamp(300px, 50vw, 600px);
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
 }
 
 .image-slider img {
+
   width: 100%;
+
   height: 100%;
+
   object-fit: cover;
+
 }
 
 .brand-logos {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
   gap: 20px;
+
   align-items: center;
+
   opacity: 0.7;
+
 }
 
 .brand-logos img {
+
   width: 100%;
+
   height: 22px;
+
   object-fit: contain;
+
   filter: grayscale(100%);
+
   transition: all 0.3s ease;
+
 }
 
 .brand-logos img:hover {
+
   filter: grayscale(0%);
+
   opacity: 1;
+
 }
 
 hr {
+
   margin: 0 auto;
+
   max-width: 1220px;
+
   border-color: #444;
+
 }
 
 /* ===== SECTION HEADERS ===== */
+
 .section-header {
+
   text-align: left;
+
   margin-bottom: 60px;
+
 }
 
 .section-header h2 {
+
   color: #ea384d;
+
   font-size: clamp(20px, 3vw, 24px);
+
   font-weight: 400;
+
   font-family: "Parkinsans", sans-serif;
+
   margin-bottom: 8px;
+
 }
 
 .section-header .title {
+
   font-size: clamp(1.5rem, 4vw, 2.5rem);
+
   font-weight: 700;
+
   color: #323334;
+
 }
 
 /* ===== IMPACT METRICS ===== */
+
 .impact-metrics {
+
   padding: 80px 0;
+
 }
 
-/* .impact-metrics .title {
-  color: #323334;
-} */
+/* .impact-metrics .title {*
+
+*  color: #323334;*
+
+*} */
 
 .metrics-grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
   gap: 20px;
+
 }
 
 .metric-card {
+
   height: 380px;
+
   background-color: #323334;
+
   border-radius: 12px;
+
   padding: 30px;
+
   color: #fff;
+
   font-family: "Parkinsans", sans-serif;
+
   transition: all 0.3s ease;
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: space-between;
+
 }
 
 .metric-card:hover {
+
   background-color: #ea384d;
+
   color: #fff;
+
   transform: translateY(-5px);
+
 }
 
 .metric-card .number {
+
   font-family: "Urbanist", sans-serif;
+
   font-size: clamp(2rem, 5vw, 3rem);
+
   font-weight: 900;
+
 }
 
 /* ===== TESTIMONIALS ===== */
+
 .testimonials {
+
   padding: 80px 0;
+
 }
 
 .testimonial-grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   gap: 20px;
+
 }
 
 .center {
+
   display: flex;
+
   flex-direction: column;
+
   gap: 20px;
+
 }
 
 .testimonial-card {
+
   height: fit-content;
+
   background-color: #323334;
+
   border-radius: 12px;
+
   padding: 30px;
+
   color: #fff;
+
   font-family: "Parkinsans", sans-serif;
+
   line-height: 28px;
+
 }
 
 .testimonial-card:hover {
+
   background: #ea384d;
+
   color: #ffffff;
+
 }
 
 .testimonial-text {
+
   margin-bottom: 20px;
+
   line-height: 1.6;
+
   font-size: clamp(14px, 2vw, 16px);
+
 }
 
 .client-info {
+
   display: flex;
+
   align-items: center;
+
   gap: 12px;
+
 }
 
 .client-info img {
+
   width: 50px;
+
   height: 50px;
+
   border-radius: 50%;
+
 }
 
 .client-info p {
+
   font-size: 12px;
+
   font-weight: 400;
+
 }
 
 .letter_box {
+
   margin: 80px auto;
+
   position: relative;
+
   max-width: 1180px;
+
   /* padding: 0 20px; */
+
   box-shadow: 0 2px 10px #323334;
+
   border-radius: 12px;
+
 }
 
 .next,
+
 .previous {
+
   width: clamp(60px, 8vw, 90px);
+
   height: clamp(60px, 8vw, 90px);
+
   background-color: #ea384d;
+
   border-radius: 50%;
+
   z-index: 1;
+
   position: absolute;
+
   top: 50%;
+
   transform: translateY(-50%);
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
 }
 
-/* .next {
-  left: -35px;
-}
+/* .next {*
+
+*  left: -35px;*
+
+*}*
+
+*.previous {*
+
+*  right: -35px;*
+
+*}*
+
+* */
 
 .previous {
-  right: -35px;
-}
- */
 
-.previous {
   left: 100%;
+
   transform: translate(-50%, -50%);
+
 }
 
 .next {
+
   right: 100%;
+
   transform: translate(50%, -50%);
+
 }
 
 .letter_image {
+
   width: 100%;
+
   height: auto;
+
 }
 
 .letter {
+
   background-color: #fff;
+
   border-radius: 12px;
+
   position: relative;
+
 }
 
 .subject {
+
   position: absolute;
+
   top: 30px;
+
   left: 30px;
+
   width: 98px;
+
   height: 36px;
+
   background-color: #fff;
+
   color: #323334;
+
   font-size: 14px;
+
   font-weight: 700;
+
   font-family: "Urbanist", sans-serif;
+
   border-radius: 50px;
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
 }
 
 .letter_text {
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   gap: 48px;
+
   flex-direction: column;
+
   padding: clamp(40px, 8vw, 50px);
+
   font-family: "Parkinsans", sans-serif;
+
 }
 
 .letter_text p {
+
   font-size: clamp(20px, 4vw, 32px);
+
   font-weight: 600;
+
   line-height: 1.2;
+
   text-align: center;
+
   color: #323334;
+
 }
 
 .letter_client {
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   gap: 12px;
+
 }
 
 .letter_client img {
+
   width: 64px;
+
   height: 64px;
+
 }
 
 .name {
+
   font-size: clamp(16px, 2vw, 18px);
+
   color: #323334;
+
 }
 
 .post {
+
   color: #727375;
+
   font-size: 14px;
+
 }
 
-/* ===== PORTFOLIO ===== */
-/* .portfolio {
-  padding: 80px 0;
-}
+/* ===== PORTFOLIO ===== /* .portfolio {*
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(1, 250px);
-  gap: 20px;
-}
+*  padding: 80px 0;*
 
-.portfolio-item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+*}*
 
-.portfolio-item img {
-  width: 100%;
-  height: clamp(300px, 40vw, 550px);
-  object-fit: cover;
-  border-radius: 12px;
-}
+*.portfolio-grid {*
 
-.portfolio-text h3 {
-  color: #fff;
-  font-size: clamp(18px, 2.5vw, 20px);
-  font-weight: 700;
-  margin-bottom: 8px;
-}
+*  display: grid;*
 
-.portfolio-text p {
-  color: #727375;
-  font-family: "Parkinsans", sans-serif;
-  font-size: clamp(14px, 2vw, 16px);
-} */
+*  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*
+
+*  grid-template-rows: repeat(1, 250px);*
+
+*  gap: 20px;*
+
+*}*
+
+*.portfolio-item {*
+
+*  display: flex;*
+
+*  flex-direction: column;*
+
+*  gap: 20px;*
+
+*}*
+
+*.portfolio-item img {*
+
+*  width: 100%;*
+
+*  height: clamp(300px, 40vw, 550px);*
+
+*  object-fit: cover;*
+
+*  border-radius: 12px;*
+
+*}*
+
+*.portfolio-text h3 {*
+
+*  color: #fff;*
+
+*  font-size: clamp(18px, 2.5vw, 20px);*
+
+*  font-weight: 700;*
+
+*  margin-bottom: 8px;*
+
+*}*
+
+*.portfolio-text p {*
+
+*  color: #727375;*
+
+*  font-family: "Parkinsans", sans-serif;*
+
+*  font-size: clamp(14px, 2vw, 16px);*
+
+*} */
 
 .portfolio {
+
   padding: 80px 0;
+
 }
 
 .portfolio-grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
   gap: 40px;
+
 }
 
 .portfolio-item {
+
   display: flex;
+
   flex-direction: column;
+
   gap: 20px;
+
 }
 
 .portfolio-item img {
+
   width: 100%;
+
   height: 550px;
+
   object-fit: cover;
+
   border-radius: 12px;
+
 }
 
 .portfolio-text h3 {
+
   font-size: 20px;
+
   font-weight: 700;
+
   margin-bottom: 8px;
+
 }
 
 .portfolio-text p {
+
   color: #727375;
+
   font-family: "Parkinsans", sans-serif;
+
 }
 
 /* Explore our work */
+
 .exploreOurwork .container {
+
   background: #323334;
+
   border-radius: 12px;
-  color:#fff;
+
+  color: #fff;
+
   padding: 40px;
+
   display: flex;
+
   flex-flow: column;
+
   gap: 40px;
+
 }
 
-.exploreOurwork_header{
+.exploreOurwork_header {
+
   display: flex;
+
   flex-flow: column;
+
   gap: 12px;
+
 }
 
 .exploreOurwork_header h2 {
+
   font-size: 40px;
+
   font-weight: 700;
+
 }
 
-.exploreOurwork_header p{
+.exploreOurwork_header p {
+
   font-size: 16px;
+
   font-weight: 400;
+
 }
 
 .exploreOurworkbutton {
+
   display: flex;
+
   gap: 20px;
+
 }
 
-.exploreOurworkbtn_text, .exploreOurwork_contactus div {
+.exploreOurworkbtn_text,
+.exploreOurwork_contactus div {
+
   font-size: 20px;
+
   font-weight: 700;
-  
-}
-.exploreOurworkbtn_vector {
-  width: fit-content;
+
 }
 
-.exploreOurworkbtn, .exploreOurwork_contactus{
+.exploreOurworkbtn_vector {
+
+  width: fit-content;
+
+}
+
+.exploreOurworkbtn,
+.exploreOurwork_contactus {
+
   display: flex;
+
   gap: 38px;
+
   justify-content: center;
+
   align-items: center;
+
   padding: 18px 26px 18px 36px;
+
   border-radius: 50px;
 
 }
 
 .exploreOurworkbtn {
-/*   display: flex;
-  gap: 38px;
-  justify-content: center;
-  align-items: center;
-  padding: 18px;
-  border-radius: 50px; */
+
+  /*   display: flex;*
+
+*  gap: 38px;*
+
+*  justify-content: center;*
+
+*  align-items: center;*
+
+*  padding: 18px;*
+
+*  border-radius: 50px; */
+
   background: #ea384d;
+
 }
 
 .exploreOurwork_contactus {
+
   border: 2px solid #ffffff;
-/*   display: flex;
-  gap: 38px;
-  justify-content: center;
-  align-items: center;
-  padding: 18px;
-  border-radius: 50px; */
+
+  /*   display: flex;*
+
+*  gap: 38px;*
+
+*  justify-content: center;*
+
+*  align-items: center;*
+
+*  padding: 18px;*
+
+*  border-radius: 50px; */
+
 }
 
-/* .exploreOurworkbtn{
+/* .exploreOurworkbtn{*
 
-}
+*}*
 
 
- */
 
-/* ===== BENEFITS ===== */
+* /* ===== BENEFITS ===== */
+
 .benefits {
+
   padding: 160px 0;
+
   margin-top: 80px;
+
 }
 
 .benefits-grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
   gap: 20px;
+
 }
 
 .benefit-card {
+
   height: 360px;
+
   background-color: #323334;
+
   color: #fff;
+
   border-radius: 12px;
+
   padding: 30px;
+
   transition: all 0.3s ease;
+
   position: relative;
+
   overflow: hidden;
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: end;
+
 }
 
 .benefit-card:hover {
+
   background-color: #ea384d;
+
   color: #fff;
+
   transform: translateY(-5px);
+
 }
 
 .benefit-card h3 {
+
   font-size: clamp(18px, 2.5vw, 20px);
+
   font-weight: 700;
+
   margin-bottom: 12px;
- /*  color: #323334; */
+
+  /*  color: #323334; */
+
 }
 
-/* .benefit-card:hover h3 {
-  color: #fff;
-} */
+/* .benefit-card:hover h3 {*
+
+*  color: #fff;*
+
+*} */
 
 .benefit-card p {
+
   color: #fff;
+
   font-family: "Parkinsans", sans-serif;
+
   line-height: 1.6;
+
   font-size: clamp(14px, 2vw, 16px);
+
 }
 
-/* .benefit-card:hover p {
-  color: #fff;
-} */
+/* .benefit-card:hover p {*
 
+*  color: #fff;*
 
+*} /* Learning hub */
 
-/* Learning hub */
 .learningHub .section-header h2 {
+
   font-size: 24px;
+
 }
 
 .learningHub .section-header p {
+
   font-size: 40px;
+
   font-weight: 700;
+
 }
 
 .learningHub_body {
+
   display: flex;
+
   gap: 20px;
+
 }
 
 .course_Container {
+
   max-width: 37.5rem;
+
 }
 
 .course {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  }
 
-.course_card{
   display: flex;
+
+  flex-direction: column;
+
   gap: 20px;
+
 }
 
-.duration,.course_projects,.lectures{
+.course_card {
+
+  display: flex;
+
+  gap: 20px;
+
+}
+
+.duration,
+.course_projects,
+.lectures {
+
   min-width: 11.875rem;
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
   align-items: center;
+
   gap: 2px;
+
   border: 2px solid #727375;
+
   border-radius: 12px;
+
   padding: 15px;
+
 }
 
-:is(.duration,.course_projects,.lectures) .text {
+:is(.duration, .course_projects, .lectures) .text {
+
   font-size: 16px;
+
   font-weight: 400;
+
   color: #727375;
+
 }
 
-.time,.project_number,.lectures_numbers{
+.time,
+.project_number,
+.lectures_numbers {
+
   font-size: 24px;
+
   color: #EA384D;
+
   font-weight: 700;
+
 }
 
 .course_details {
+
   display: flex;
+
   flex-direction: column;
+
   gap: 12px;
+
 }
 
 .course_title {
+
   font-size: 32px;
+
   font-weight: 700;
+
 }
 
-.course_details_text{
+.course_details_text {
+
   font-size: 16px;
+
   font-weight: 400;
+
   color: #727375;
+
 }
 
 .blank {
+
   width: 37.5rem;
+
   height: 26.125rem;
+
   background-color: #D9D9D9;
+
   border-radius: 12px;
+
 }
 
 /* ===== PRICING ===== */
+
 .pricing {
+
   padding: 80px 0;
+
 }
 
 .pricing-grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
   gap: 20px;
+
 }
 
 .pricing-card {
+
   background-color: #323334;
+
   border-radius: 12px;
+
   padding: 40px;
+
   color: #fff;
+
   transition: all 0.3s ease;
+
 }
 
 .pricing-card:hover {
+
   background-color: #ea384d;
+
   color: #fff;
+
   transform: translateY(-5px);
+
 }
 
 .plan-name {
+
   font-size: clamp(24px, 3vw, 28px);
+
   font-weight: 700;
+
   margin-bottom: 8px;
+
 }
 
 .plan-description {
+
   /* color: #727375; */
-  color:#fff;
+
+  color: #fff;
+
   font-family: "Parkinsans", sans-serif;
+
   margin-bottom: 20px;
+
   font-size: clamp(14px, 2vw, 16px);
+
 }
 
 .pricing-card:hover .plan-description {
+
   color: #fff;
+
 }
 
 .price {
+
   display: flex;
+
   align-items: baseline;
+
   gap: 5px;
+
   margin-bottom: 30px;
+
   font-size: clamp(16px, 2vw, 18px);
+
 }
 
 .price .amount {
+
   font-size: clamp(28px, 4vw, 36px);
+
   font-weight: 700;
+
 }
 
 .plan-features {
+
   margin-bottom: 30px;
+
 }
 
 .plan-features ul {
+
   list-style: none;
+
   padding: 0;
+
 }
 
 .plan-features li {
+
   padding: 4px 0;
+
   font-family: "Parkinsans", sans-serif;
+
   color: #fff;
+
   font-size: clamp(14px, 2vw, 16px);
+
 }
 
 .pricing-card:hover .plan-features li {
+
   color: #fff;
+
 }
 
 .plan-features li::before {
+
   content: "✓ ";
+
   color: #ea384d;
+
   font-weight: bold;
+
   margin-right: 8px;
+
 }
 
 .pricing-card:hover .plan-features li::before {
+
   color: #fff;
+
 }
 
 .pricing-card .btn-primary {
+
   margin: 76px 0 0 0;
+
   background-color: #EA384D;
+
   width: 100%;
+
 }
 
 .pricing-card:hover a {
+
   background-color: #fff;
+
   color: #323334;
+
 }
 
 .pricing-card:hover a img {
+
   content: url(../images/bVector.png);
+
 }
 
 /* ===== FAQ ===== */
+
 .faq {
+
   padding: 80px 0;
+
 }
 
 .faq-list {
+
   max-width: 1220px;
+
   margin: 0 auto;
+
 }
 
 .faq-item {
+
   background-color: #ea384d;
+
   border-radius: 12px;
+
   margin-bottom: 16px;
+
   overflow: hidden;
+
 }
 
 .faq-item details {
+
   padding: 24px 30px;
+
 }
 
 .faq-item summary {
+
   color: #fff;
+
   font-weight: 600;
+
   cursor: pointer;
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   font-size: clamp(16px, 2vw, 18px);
+
 }
 
 .faq-item summary::after {
+
   content: url(../images/dVector.png);
+
   font-size: 20px;
+
   transition: transform 0.3s ease;
+
 }
 
 .faq-item[open] summary::after {
+
   transform: rotate(45deg);
+
 }
 
 .faq-item p {
+
   background-color: #fff;
+
   color: #323334;
+
   padding: 20px;
+
   margin: 20px -30px -24px -30px;
+
   font-family: "Parkinsans", sans-serif;
+
   font-size: clamp(14px, 2vw, 16px);
+
 }
 
 /* ===== FOOTER ===== */
+
 footer {
+
   padding: 80px 0 40px;
+
   border-top: 1px solid #444;
+
   margin-top: 80px;
+
 }
 
 .footer-content {
+
   display: grid;
+
   grid-template-columns: 1fr 2fr;
+
   gap: 40px;
+
   margin-bottom: 40px;
+
 }
 
 .footer-section h3 {
+
   color: #fff;
+
   font-size: clamp(28px, 4vw, 40px);
+
   font-weight: 700;
+
   margin-bottom: 20px;
+
 }
 
 .footer-section a {
+
   color: #fff;
+
   text-decoration: none;
+
   font-family: "Parkinsans", sans-serif;
+
   display: flex;
+
   margin-bottom: 8px;
+
   transition: color 0.3s ease;
+
 }
 
 .footer_right {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
   gap: 40px;
+
 }
 
 :is(.quick_links, .connect_with_us) h3 {
+
   font-size: clamp(18px, 2.5vw, 20px);
+
   font-weight: 700;
+
 }
 
 .link_list {
+
   margin-top: 20px;
+
   font-size: 14px;
+
   line-height: 22px;
+
   display: flex;
+
   flex-direction: column;
+
   gap: 8px;
+
 }
 
 .link_list a {
+
   text-decoration: none;
+
   color: #727375;
+
 }
 
 .link_list a:hover {
+
   color: #ea384d;
+
 }
 
 .social_links a {
+
   display: flex;
+
   justify-content: start;
+
   align-items: center;
+
   gap: 6px;
+
 }
 
 .social_links a {
+
   --src-hover: url();
+
 }
 
 .social_links a:hover img {
+
   content: var(--src-hover);
+
 }
 
 .social_links a:nth-child(1) {
+
   --src-hover: url(../images/red_facebook.png);
+
 }
 
 .social_links a:nth-child(2) {
+
   --src-hover: url(../images/red_instagram.png);
+
 }
 
 .social_links a:nth-child(3) {
+
   --src-hover: url(../images/red_linkedin.png);
+
 }
 
 .social_links a:nth-child(4) {
+
   --src-hover: url(../images/red_x.png);
+
 }
 
 .social_links a:nth-child(5) {
+
   --src-hover: url(../images/red_mail.png);
+
 }
 
 .footer-bottom {
+
   border-top: 1px solid #444;
+
   padding-top: 20px;
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   flex-wrap: wrap;
+
   gap: 20px;
+
 }
 
 .footer-bottom p,
+
 .footer-bottom a {
+
   color: #727375;
+
   font-family: "Parkinsans", sans-serif;
+
   font-size: 14px;
+
   line-height: 22px;
+
   text-decoration: none;
+
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+
 @media (max-width: 1024px) {
+
   .container {
+
     padding: 0 30px;
+
   }
 
   .testimonial-grid {
+
     grid-template-columns: 1fr;
+
   }
 
   .center {
+
     display: contents;
+
   }
 
   .letter_box {
+
     padding: 0 60px;
+
   }
+
 }
 
 @media (max-width: 768px) {
+
   body {
+
     padding-top: 80px;
+
   }
 
   .container {
+
     padding: 0 20px;
+
   }
 
   .nav-links {
+
     flex-direction: column;
+
     text-align: center;
+
     gap: 15px;
+
   }
 
   .logo img {
+
     width: 200px;
+
     height: auto;
+
   }
 
   .hero-section {
+
     padding: 40px 0;
+
   }
 
   .customer-review {
+
     justify-content: center;
+
     text-align: center;
+
   }
 
   .hero-content {
+
     text-align: center;
+
   }
 
   .section-header {
+
     margin-bottom: 40px;
+
     text-align: center;
+
   }
 
   .metrics-grid {
+
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  }
+
+  .metric-card {
+
+    height: 300px;
+
+  }
+
+  .testimonial-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .testimonial-card {
+
+    width: 100%;
+
+  }
+
+  .letter_box {
+
+    padding: 0 40px;
+
+  }
+
+  .next,
+
+  .previous {
+
+    width: 60px;
+
+    height: 60px;
+
+  }
+
+  .next {
+
+    left: -30px;
+
+  }
+
+  .previous {
+
+    right: -30px;
+
+  }
+
+  .portfolio-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .benefits-grid {
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  }
+
+  .benefit-card {
+
+    height: auto;
+
+    min-height: 250px;
+
+  }
+
+  .pricing-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .footer-content {
+
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    gap: 30px;
+
+  }
+
+  .footer_right {
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+  }
+
+  .footer-bottom {
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 10px;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .container {
+
+    padding: 0 15px;
+
+  }
+
+  .nav-links .links a {
+
+    min-width: 140px;
+
+    height: 40px;
+
+    font-size: 14px;
+
+    padding: 10px 20px;
+
+  }
+
+  .btn-primary {
+
+    min-width: 180px;
+
+    height: 50px;
+
+    padding: 15px 30px;
+
+    font-size: 16px;
+
+  }
+
+  .brand-logos {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .metrics-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .letter_box {
+
+    padding: 0 20px;
+
+  }
+
+  .next,
+
+  .previous {
+
+    width: 50px;
+
+    height: 50px;
+
+  }
+
+  .next {
+
+    left: -25px;
+
+  }
+
+  .previous {
+
+    right: -25px;
+
+  }
+
+  .subject {
+
+    top: 15px;
+
+    left: 15px;
+
+    width: 80px;
+
+    height: 30px;
+
+    font-size: 12px;
+
+  }
+
+  .portfolio-item img {
+
+    height: 250px;
+
+  }
+
+  .benefits {
+
+    padding: 0;
+
+  }
+
+  .benefit-card {
+
+    height: auto;
+
+    min-height: 200px;
+
+    padding: 20px;
+
+  }
+
+  .pricing-card {
+
+    padding: 30px 20px;
+
+  }
+
+  .pricing-card .btn-primary {
+
+    margin-top: 40px;
+
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .container {
+
+    padding: 0 10px;
+
+  }
+
+  .letter_box {
+
+    padding: 0 10px;
+
+  }
+
+  .next,
+
+  .previous {
+
+    display: none;
+
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE REFINEMENT
+   Keeps the original visual design and content intact.
+   ========================================================= */
+
+/* Prevent media/content from creating horizontal overflow */
+img {
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Large tablets / smaller laptops */
+@media (max-width: 1100px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  .portfolio-item img {
+    height: clamp(400px, 48vw, 550px);
+  }
+
+  .learningHub_body {
+    flex-wrap: wrap;
+  }
+
+  .course_Container,
+  .blank {
+    width: 100%;
+    max-width: none;
+  }
+
+  .blank {
+    height: clamp(300px, 45vw, 418px);
+  }
+
+  .course_card {
+    flex-wrap: wrap;
+  }
+
+  .duration,
+  .course_projects,
+  .lectures {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    padding-top: 76px;
+  }
+
+  header {
+    padding: 14px 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .logo {
+    min-width: 0;
+  }
+
+  .logo img {
+    width: min(200px, 55vw);
+    height: auto;
+  }
+
+  .nav-links .links {
+    flex-shrink: 0;
+  }
+
+  .nav-links .links a {
+    min-width: 140px;
+    height: 42px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero-section {
+    padding: 70px 0 50px;
+    margin-top: 0;
+  }
+
+  .hero-content h1 br {
+    display: none;
+  }
+
+  .hero-content p {
+    max-width: 650px;
+  }
+
+  .gallery,
+  .impact-metrics,
+  .testimonials,
+  .portfolio,
+  .pricing,
+  .faq {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .image-slider {
+    height: clamp(240px, 55vw, 450px);
+    margin-bottom: 45px;
+  }
+
+  .brand-logos {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .metric-card {
@@ -1033,150 +2112,421 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .testimonial-card {
-    width: 100%;
+  .center {
+    display: flex;
   }
 
   .letter_box {
-    padding: 0 40px;
+    margin: 60px auto;
+    padding: 0 35px;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .letter {
+    overflow: hidden;
   }
 
   .next,
   .previous {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
   }
 
   .next {
-    left: -30px;
+    left: 0;
+    transform: translate(-50%, -50%);
   }
 
   .previous {
-    right: -30px;
+    left: auto;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  .subject {
+    top: 20px;
+    left: 20px;
+  }
+
+  .letter_text {
+    gap: 32px;
+    padding: 40px 30px;
   }
 
   .portfolio-grid {
     grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .portfolio-item img {
+    height: clamp(300px, 65vw, 500px);
+  }
+
+  .exploreOurwork .container {
+    padding: 32px;
+  }
+
+  .exploreOurwork_header h2 {
+    font-size: clamp(30px, 5vw, 40px);
+  }
+
+  .exploreOurworkbutton {
+    flex-wrap: wrap;
+  }
+
+  .exploreOurworkbtn,
+  .exploreOurwork_contactus {
+    flex: 1 1 220px;
+  }
+
+  .benefits {
+    padding: 100px 0;
+    margin-top: 40px;
   }
 
   .benefits-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .benefit-card {
-    height: auto;
-    min-height: 250px;
+    height: 300px;
+  }
+
+  .learningHub .section-header p {
+    font-size: clamp(28px, 5vw, 40px);
+  }
+
+  .course_card {
+    gap: 12px;
+  }
+
+  .duration,
+  .course_projects,
+  .lectures {
+    padding: 12px;
   }
 
   .pricing-grid {
     grid-template-columns: 1fr;
   }
 
+  .pricing-card {
+    padding: 35px;
+  }
+
+  footer {
+    padding-top: 60px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
-    text-align: center;
-    gap: 30px;
   }
 
   .footer_right {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+  .footer-section {
+    text-align: left;
   }
 }
 
-@media (max-width: 480px) {
+/* Phones */
+@media (max-width: 540px) {
   .container {
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .logo img {
+    width: min(175px, 52vw);
   }
 
   .nav-links .links a {
-    min-width: 140px;
-    height: 40px;
-    font-size: 14px;
-    padding: 10px 20px;
+    min-width: 0;
+    width: auto;
+    padding: 9px 16px;
+    font-size: 13px;
   }
 
-  .btn-primary {
-    min-width: 180px;
-    height: 50px;
-    padding: 15px 30px;
+  .hero-section {
+    padding: 50px 0 35px;
+  }
+
+  .customer-review {
+    justify-content: flex-start;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .hero-content p {
     font-size: 16px;
   }
 
-  .brand-logos {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-content .btn-primary {
+    width: 100%;
+    max-width: 248px;
   }
 
-  .metrics-grid {
+  .gallery,
+  .impact-metrics,
+  .testimonials,
+  .portfolio,
+  .pricing,
+  .faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .image-slider {
+    height: clamp(190px, 55vw, 300px);
+    border-radius: 10px;
+    margin-bottom: 35px;
+  }
+
+  .brand-logos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 12px;
+  }
+
+  .brand-logos img {
+    height: 20px;
+  }
+
+  hr {
+    width: calc(100% - 30px);
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .section-header .title {
+    line-height: 1.25;
+  }
+
+  .metrics-grid,
+  .benefits-grid {
     grid-template-columns: 1fr;
   }
 
+  .metric-card {
+    height: 230px;
+    padding: 24px;
+  }
+
+  .testimonial-card {
+    padding: 24px;
+  }
+
   .letter_box {
-    padding: 0 20px;
+    padding: 0 22px;
+    margin: 50px auto;
   }
 
-  .next,
-  .previous {
-    width: 50px;
-    height: 50px;
+  .letter_text {
+    gap: 28px;
+    padding: 42px 20px 32px;
   }
 
-  .next {
-    left: -25px;
+  .letter_text p {
+    font-size: clamp(20px, 6vw, 28px);
   }
 
-  .previous {
-    right: -25px;
+  .letter_client img {
+    width: 54px;
+    height: 54px;
   }
 
   .subject {
-    top: 15px;
-    left: 15px;
-    width: 80px;
+    top: 14px;
+    left: 14px;
+    width: 82px;
     height: 30px;
     font-size: 12px;
   }
 
+  .next,
+  .previous {
+    width: 46px;
+    height: 46px;
+  }
+
+  .portfolio-item {
+    gap: 15px;
+  }
+
   .portfolio-item img {
-    height: 250px;
+    height: clamp(240px, 70vw, 360px);
+  }
+
+  .exploreOurwork .container {
+    padding: 28px 22px;
+    gap: 30px;
+  }
+
+  .exploreOurworkbutton {
+    flex-direction: column;
+  }
+
+  .exploreOurworkbtn,
+  .exploreOurwork_contactus {
+    width: 100%;
+    flex: none;
   }
 
   .benefits {
-    padding: 0;
+    padding: 70px 0;
   }
 
   .benefit-card {
+    min-height: 220px;
     height: auto;
-    min-height: 200px;
-    padding: 20px;
+    padding: 24px;
+  }
+
+  .learningHub_body {
+    gap: 30px;
+  }
+
+  .course_card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .duration,
+  .course_projects,
+  .lectures {
+    min-width: 0;
+    width: 100%;
+    padding: 10px 5px;
+  }
+
+  :is(.duration, .course_projects, .lectures) .text {
+    font-size: 13px;
+  }
+
+  .time,
+  .project_number,
+  .lectures_numbers {
+    font-size: 19px;
+  }
+
+  .course_title {
+    font-size: clamp(25px, 7vw, 32px);
+  }
+
+  .course_details_text {
+    font-size: 15px;
+  }
+
+  .blank {
+    min-height: 220px;
+    height: 55vw;
   }
 
   .pricing-card {
-    padding: 30px 20px;
+    padding: 28px 22px;
   }
 
   .pricing-card .btn-primary {
-    margin-top: 40px;
+    max-width: none;
+  }
+
+  .faq-item details {
+    padding: 20px;
+  }
+
+  .faq-item p {
+    margin: 20px -20px -20px;
+    padding: 18px 20px;
+  }
+
+  .footer_right {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section .btn-primary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link_list {
+    align-items: center;
+  }
+
+  .social_links a {
+    justify-content: center;
   }
 }
 
+/* Very small phones */
 @media (max-width: 360px) {
   .container {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nav-links .links a {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .brand-logos {
+    gap: 14px 8px;
   }
 
   .letter_box {
-    padding: 0 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .next,
   .previous {
-    display: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  .next {
+    transform: translate(-45%, -50%);
+  }
+
+  .previous {
+    transform: translate(45%, -50%);
+  }
+
+  .course_card {
+    gap: 5px;
+  }
+
+  :is(.duration, .course_projects, .lectures) .text {
+    font-size: 11px;
+  }
+
+  .time,
+  .project_number,
+  .lectures_numbers {
+    font-size: 17px;
   }
 }
